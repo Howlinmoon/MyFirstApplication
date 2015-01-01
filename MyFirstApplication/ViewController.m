@@ -26,4 +26,9 @@
     // Dispose of any resources that can be recreated.
 }
 
+// clicking the button copies the text from our text field into the label
+- (IBAction)buttonPressed:(UIButton *)sender {
+    self.titleLabel.text = self.textField.text;
+    [self.textField resignFirstResponder];
+}
 @end
